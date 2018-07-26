@@ -6,14 +6,15 @@
 # this script will poll the contained urls for the relevant data & print to
 # screen:
 
+clear
 while :
     do
-        clear;
+        # clear;
         curl http://api.thingspeak.com/channels/1417/field/1/last.txt;
         echo;
         curl http://api.thingspeak.com/channels/1417/field/2/last.txt;
         echo;
-        sleep 5;
+        sleep 20;
 #        clear;
     done
 
